@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 indent() {
-    sed -u 's/^/       ### buildpack output ###/'
+    sed -u 's/^/       ### buildpack output ###  /'
 }
 
 moveBabelRc() {
