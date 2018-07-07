@@ -5,7 +5,9 @@ indent() {
 
 moveBabelRc() {
     if [ -f "${BUILD_DIR}/.babelrc" ]; 
-        then mv "${BUILD_DIR}/.babelrc" "${STAGE}"
+        then 
+            mv "${BUILD_DIR}/.babelrc" "${STAGE}/${APP_BASE}"
+            echo "babelrc file moved"
         else echo "No .babelrc"
     fi
 }
