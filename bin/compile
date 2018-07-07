@@ -23,7 +23,7 @@ APP_BASE="$(cat "${ENV_DIR}/APP_BASE")"
 
 (
     mv "${BUILD_DIR}/${APP_BASE}" "${STAGE}" &&
-    moveBabelRc() &&
+    moveBabelRc &&
     rm -rf "${BUILD_DIR}" &&
     mv "${STAGE}/$(basename "$APP_BASE")" "${BUILD_DIR}"
 )
