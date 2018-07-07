@@ -7,7 +7,7 @@ moveBabelRc() {
     if [ -f "${BUILD_DIR}/.babelrc" ]; 
         then 
             mv "${BUILD_DIR}/.babelrc" "${STAGE}/$(basename "$APP_BASE")"
-            echo "babelrc file moved"
+            echo "babelrc file moved" | indent
         else echo "No .babelrc"
     fi
 }
